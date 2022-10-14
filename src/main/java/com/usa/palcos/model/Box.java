@@ -4,8 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import net.bytebuddy.description.field.FieldDescription;
-import org.apache.catalina.LifecycleState;
 
 import javax.persistence.*;
 import java.util.List;
