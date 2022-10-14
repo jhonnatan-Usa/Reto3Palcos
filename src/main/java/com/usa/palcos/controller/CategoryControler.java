@@ -26,7 +26,7 @@ public class CategoryControler {
         return categoryService.getAll();
     }
 
-    @PostMapping("/{idCategory}")
+    @GetMapping("/{idCategory}")
     public Optional<Category> getById (@PathVariable("idCategory") Integer id){
         return categoryService.getById(id);
     }
