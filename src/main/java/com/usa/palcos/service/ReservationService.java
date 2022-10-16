@@ -1,7 +1,6 @@
 package com.usa.palcos.service;
 
 import com.usa.palcos.model.ClientReport;
-import com.usa.palcos.model.Message;
 import com.usa.palcos.model.Reservation;
 import com.usa.palcos.model.ReservationReport;
 import com.usa.palcos.repository.ReservationRepository;

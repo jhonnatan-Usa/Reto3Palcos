@@ -7,7 +7,10 @@ import com.usa.palcos.repository.crudrepository.ReservationCrudRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Optional;
 
 @Repository
 public class ReservationRepository {
@@ -31,7 +34,7 @@ public class ReservationRepository {
     }
 
     public List<Reservation> getReservationByStatus(String status){
-        return reservationCrudRepository.finAllByStatus(status);
+        return reservationCrudRepository.findAllByStatus(status);
     }
 
     public List<Reservation> getReservationPeriod(Date dateOne, Date dateTwo){
