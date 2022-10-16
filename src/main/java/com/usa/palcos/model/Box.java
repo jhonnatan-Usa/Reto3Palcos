@@ -29,10 +29,10 @@ public class Box {
 
     @OneToMany(cascade = {CascadeType.PERSIST}, mappedBy = "box")
     @JsonIgnoreProperties({"box", "client"})
-    private List<Message> message;
+    private List<Message> messages;
 
     @OneToMany(cascade = {CascadeType.PERSIST}, mappedBy = "box")
     @JsonIgnoreProperties({"box","client"})
-    private List<Reservation> reservation;
+    private List<Reservation> reservations;
 
 }
