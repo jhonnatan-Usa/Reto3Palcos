@@ -25,7 +25,7 @@ public class Reservation {
 
     @ManyToOne
     @JoinColumn(name = "id")
-    @JsonIgnoreProperties("reservations")
+    @JsonIgnoreProperties({"reservations", "messages"})
     private Box box;
 
     @ManyToOne
