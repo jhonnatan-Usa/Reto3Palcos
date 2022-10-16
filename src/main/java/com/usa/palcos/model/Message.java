@@ -8,7 +8,7 @@ import lombok.Setter;
 import javax.persistence.*;
 
 @Entity
-@Table(name ="message")
+@Table(name = "message")
 @NoArgsConstructor
 @Getter
 @Setter
@@ -20,12 +20,12 @@ public class Message {
 
     @ManyToOne
     @JoinColumn(name = "idBox")
-    @JsonIgnoreProperties({"messages", "client", "reservations"}) //Arreglo {}
+    @JsonIgnoreProperties({"message", "client", "reservation"}) //Arreglo {}
     private Box box;
 
     @ManyToOne
     @JoinColumn(name = "idClient")
-    @JsonIgnoreProperties({"messages", "client", "reservations"}) //Arreglo {}
+    @JsonIgnoreProperties({"message", "client", "reservation"}) //Arreglo {}
     private Client client;
 
 }
