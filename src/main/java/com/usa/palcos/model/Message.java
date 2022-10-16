@@ -20,12 +20,12 @@ public class Message {
 
     @ManyToOne
     @JoinColumn(name = "idBox")
-    @JsonIgnoreProperties({"message", "client", "reservation"}) //Arreglo {}
+    @JsonIgnoreProperties({"messages", "client", "reservations"}) //Arreglo {}
     private Box box;
 
     @ManyToOne
     @JoinColumn(name = "idClient")
-    @JsonIgnoreProperties({"message", "client", "reservation"}) //Arreglo {}
+    @JsonIgnoreProperties({"messages", "client", "reservations"}) //Arreglo {}
     private Client client;
 
 }
